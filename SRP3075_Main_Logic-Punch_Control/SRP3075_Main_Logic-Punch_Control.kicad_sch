@@ -1,0 +1,1237 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "bb536a5f-2126-4b02-b0c6-8f959314547b")
+	(paper "USLetter")
+	(title_block
+		(title "DSI SRP3075 - Main Logic & Punch Control")
+		(date "2026-09-26")
+		(rev "1")
+		(company "Jeremy Pastin")
+	)
+	(lib_symbols)
+	(text "Channels 5-8, Sprocket"
+		(exclude_from_sim no)
+		(at 212.09 125.984 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "0232b671-fc9d-4988-8f01-2711ab5a4470")
+	)
+	(text "Strobe Select, Ready"
+		(exclude_from_sim no)
+		(at 58.166 83.312 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "04fdc1cc-7247-45f5-a9b8-f66d47c6b81e")
+	)
+	(text "SYS_CLK, ONLINE to All"
+		(exclude_from_sim no)
+		(at 135.89 43.688 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "2499a727-d9af-4ac4-a808-ba5bfd9570fe")
+	)
+	(text "Notes:\n1) Reverse-engineered from the physical board.  Not a manufacturer drawing.\n   Signal names from the DSI manual are used where they exist; all others, and \n   all symbol references, are the author's.  Symbol reference physical locations \n   documented separately.\n2) Serial version represented here, parallel hardware unused. Including:\n   J1, F1/F2, unpopulated DIP-14 near U2, R3, R6, PUNCH_SPROCKET_EN(J2-12)\n3) Serial board grounds J2-14 (~{SERIAL_DETECT}), which selects the serial\n   punch strobe.  Board always runs in buffered (FIFO) mode.\n4) GND & GND_24V are separate on this board.  They only tie together in the PSU."
+		(exclude_from_sim no)
+		(at 179.324 171.196 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c509558-4973-400e-9092-0dc8a947bcbe")
+	)
+	(text "Clock & Reset"
+		(exclude_from_sim no)
+		(at 135.89 38.354 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "339ca983-ba00-42ba-9c04-1a537b260101")
+	)
+	(text "Channels 1-4, Supply Boost"
+		(exclude_from_sim no)
+		(at 213.106 83.312 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "3444ec16-5f49-43ec-b3ab-571fe18750c2")
+	)
+	(text "FIFO, Buffer, Punch Registers"
+		(exclude_from_sim no)
+		(at 135.636 83.312 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "384250db-ba63-45e6-a5c6-7f73648d6b1b")
+	)
+	(text "AC Motor & Sync"
+		(exclude_from_sim no)
+		(at 58.42 120.65 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "3a1f9af4-98cd-4988-99af-6750ffb0a532")
+	)
+	(text "Tape Feed Stepper"
+		(exclude_from_sim no)
+		(at 58.42 169.926 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "7a555283-7a55-4524-8ae1-9c9e6af7b659")
+	)
+	(text "Punch Data Buffer"
+		(exclude_from_sim no)
+		(at 135.636 77.978 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "7f934a35-ef26-40eb-889f-82bf9f84c65b")
+	)
+	(text "Punch Stepper Drive"
+		(exclude_from_sim no)
+		(at 58.42 164.592 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "82b2f5f2-e896-4dc3-8027-2763d6b788d3")
+	)
+	(text "Power & Spares"
+		(exclude_from_sim no)
+		(at 134.366 164.338 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "8ee4e0f8-c58c-48c0-9a18-8aa08be7dda2")
+	)
+	(text "Punch Sequencer"
+		(exclude_from_sim no)
+		(at 134.874 120.65 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "99db9eb4-c2e6-40b6-9568-cdf50a622771")
+	)
+	(text "PUNCH_SYNC Timing"
+		(exclude_from_sim no)
+		(at 134.874 125.984 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "acc8f4ee-f797-46ba-8e3c-a5d63f5c13df")
+	)
+	(text "J1-J8, F1, F2"
+		(exclude_from_sim no)
+		(at 213.36 43.942 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "b162f50d-67a1-4bed-a148-9b456981fc68")
+	)
+	(text "Relay Drive 5-8, S"
+		(exclude_from_sim no)
+		(at 212.09 120.65 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "b664c69a-8eb3-490a-8485-7830920de29b")
+	)
+	(text "Punch Handshake"
+		(exclude_from_sim no)
+		(at 58.166 77.978 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "becd1ecf-958a-49f4-83d6-92791abc1842")
+	)
+	(text "Bypass, Unused Gates"
+		(exclude_from_sim no)
+		(at 134.366 169.672 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "c969f997-9d22-4cb3-a2f7-44254301ba9c")
+	)
+	(text "Connectors"
+		(exclude_from_sim no)
+		(at 213.36 38.608 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "c9b2b669-0064-480b-b92f-efd98de97e65")
+	)
+	(text "Switches, Latches, LEDs"
+		(exclude_from_sim no)
+		(at 58.166 43.688 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "f4e8ce3f-bd26-4a12-8d86-54f18218caa6")
+	)
+	(text "Relay Drive 1-4"
+		(exclude_from_sim no)
+		(at 213.106 77.978 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "fa47856a-ef86-4618-9ceb-b123c2b5a4cf")
+	)
+	(text "Front Panel & Status"
+		(exclude_from_sim no)
+		(at 58.166 38.354 0)
+		(effects
+			(font
+				(size 2.159 2.159)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "fc086157-095e-44e9-a97b-f677b08aa7ab")
+	)
+	(text "Sensor, Sync, Idle Timer"
+		(exclude_from_sim no)
+		(at 58.42 125.984 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "fe77daa2-d0ca-4e72-b539-fb07251ed943")
+	)
+	(polyline
+		(pts
+			(xy 110.49 121.92) (xy 110.49 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17c4542f-a087-45d7-abd0-3f52e01e76c1")
+	)
+	(polyline
+		(pts
+			(xy 68.58 147.32) (xy 134.62 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bfda896-da5b-4658-802a-df9c154b5013")
+	)
+	(polyline
+		(pts
+			(xy 49.53 139.7) (xy 58.42 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27590012-945d-4dc9-a4ce-529f170d41f3")
+	)
+	(polyline
+		(pts
+			(xy 189.23 78.74) (xy 189.23 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ad4118c-0d61-4807-a55f-1e4ff6e2bd01")
+	)
+	(polyline
+		(pts
+			(xy 127 88.9) (xy 128.27 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b498929-49bb-4708-88aa-e2e2e8327127")
+	)
+	(polyline
+		(pts
+			(xy 158.75 80.01) (xy 190.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b89ffd4-b996-4efa-ae3b-8a6641c07d97")
+	)
+	(polyline
+		(pts
+			(xy 58.42 49.53) (xy 58.42 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dfc3ee8-272c-452c-9780-0e13c3fee19e")
+	)
+	(polyline
+		(pts
+			(xy 81.28 123.19) (xy 111.76 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e00487d-b074-4810-b637-529e06d2ba0a")
+	)
+	(polyline
+		(pts
+			(xy 127 105.41) (xy 134.62 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32495b40-2f49-4e88-9344-6d16ef72d668")
+	)
+	(polyline
+		(pts
+			(xy 212.09 113.03) (xy 213.36 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36f3e852-8452-4d9f-bf32-e838c79ea7a6")
+	)
+	(polyline
+		(pts
+			(xy 146.05 88.9) (xy 146.05 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f6ae29f-5495-4e93-a495-2c3a1e06fa26")
+	)
+	(polyline
+		(pts
+			(xy 68.58 147.32) (xy 68.58 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "434f6139-708d-4f4a-bbf4-8faaddbedc50")
+	)
+	(polyline
+		(pts
+			(xy 67.31 156.21) (xy 69.85 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "467e8fba-1f87-4b00-af81-107a54c3b4f5")
+	)
+	(polyline
+		(pts
+			(xy 48.26 156.21) (xy 50.8 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46eb98f7-4ab7-4220-9120-907adf0f2a41")
+	)
+	(polyline
+		(pts
+			(xy 127 88.9) (xy 125.73 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49b3b62e-a8ba-4808-9e85-8f8934c88cca")
+	)
+	(polyline
+		(pts
+			(xy 157.48 123.19) (xy 189.23 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a279b4a-d4bf-42df-9b72-4d83c00a847f")
+	)
+	(polyline
+		(pts
+			(xy 57.15 69.85) (xy 59.69 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f592e1b-d6d3-47d2-98ad-1af6f45433bb")
+	)
+	(polyline
+		(pts
+			(xy 111.76 123.19) (xy 110.49 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5647df92-9337-45d3-a2cb-7876ffe50232")
+	)
+	(polyline
+		(pts
+			(xy 213.36 114.3) (xy 214.63 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c865e12-6600-455d-87e7-9bad1868e1dc")
+	)
+	(polyline
+		(pts
+			(xy 187.96 121.92) (xy 187.96 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b696be-09e5-4499-a342-e21185b42c9c")
+	)
+	(polyline
+		(pts
+			(xy 134.62 105.41) (xy 134.62 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "797a4241-56e0-45ec-8f02-c2c078336a2b")
+	)
+	(polyline
+		(pts
+			(xy 212.09 113.03) (xy 214.63 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7afb5ab6-213c-45ea-9037-abbfa2863585")
+	)
+	(polyline
+		(pts
+			(xy 146.05 95.25) (xy 208.28 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82af98a2-a598-480e-a87a-4dd6f6516fd5")
+	)
+	(polyline
+		(pts
+			(xy 208.28 95.25) (xy 213.36 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84f8949f-2842-40d9-89c1-d630999ab970")
+	)
+	(polyline
+		(pts
+			(xy 187.96 124.46) (xy 189.23 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8af42003-f80c-4b8a-976f-e29c64b62a93")
+	)
+	(polyline
+		(pts
+			(xy 49.53 157.48) (xy 48.26 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fdb298f-4545-49d5-86f7-89c04c0dcc00")
+	)
+	(polyline
+		(pts
+			(xy 49.53 157.48) (xy 50.8 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "926fe1c4-39c5-4c66-8532-a1233b606da0")
+	)
+	(polyline
+		(pts
+			(xy 58.42 132.08) (xy 58.42 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c84876-632f-4203-b300-9fab38906948")
+	)
+	(polyline
+		(pts
+			(xy 57.15 69.85) (xy 58.42 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "984bf58e-0d70-43c5-a14d-a03f52284f3e")
+	)
+	(polyline
+		(pts
+			(xy 58.42 71.12) (xy 59.69 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a28e2fc0-ee63-49c7-8303-c10d382f083d")
+	)
+	(polyline
+		(pts
+			(xy 189.23 81.28) (xy 190.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a35c6953-20fb-4a9b-a0c1-a093c24a19e1")
+	)
+	(polyline
+		(pts
+			(xy 68.58 157.48) (xy 69.85 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a64eedc8-25a3-4547-83a8-16d65a987dc9")
+	)
+	(polyline
+		(pts
+			(xy 113.03 80.01) (xy 111.76 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b78289c0-c2d0-4765-8519-24625eca063f")
+	)
+	(polyline
+		(pts
+			(xy 49.53 139.7) (xy 49.53 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0399996-25d7-48d9-bb4b-337ecda48075")
+	)
+	(polyline
+		(pts
+			(xy 134.62 132.08) (xy 134.62 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1762a68-fbc2-47b3-a6a9-85e138e23c57")
+	)
+	(polyline
+		(pts
+			(xy 111.76 78.74) (xy 111.76 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0b8319e-4d23-4792-8961-f37473606763")
+	)
+	(polyline
+		(pts
+			(xy 110.49 124.46) (xy 111.76 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d54abd4e-87d4-4a1a-a6f3-177211dcc0df")
+	)
+	(polyline
+		(pts
+			(xy 190.5 80.01) (xy 189.23 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de7b6bf3-d306-4e98-b0d2-6c91989464dd")
+	)
+	(polyline
+		(pts
+			(xy 127 88.9) (xy 127 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1341ae3-9708-4495-a106-3e084ce4aeee")
+	)
+	(polyline
+		(pts
+			(xy 68.58 157.48) (xy 67.31 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9658240-52c0-4e49-90c1-84ea8605d0c0")
+	)
+	(polyline
+		(pts
+			(xy 213.36 95.25) (xy 213.36 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edba60ca-5a12-4692-9cbf-8adf54f28571")
+	)
+	(polyline
+		(pts
+			(xy 81.28 80.01) (xy 113.03 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0c850dc-2aa9-41a5-a50a-6afc7cdc05ff")
+	)
+	(polyline
+		(pts
+			(xy 125.73 90.17) (xy 128.27 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f867ac79-25ec-4cc7-b003-f81711741366")
+	)
+	(polyline
+		(pts
+			(xy 189.23 123.19) (xy 187.96 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9f8235f-1e07-47e1-b2a4-8c756ef188a1")
+	)
+	(polyline
+		(pts
+			(xy 111.76 81.28) (xy 113.03 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffd641aa-03f8-4605-bcb3-c740b1bdb54f")
+	)
+	(sheet
+		(at 35.56 157.48)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "12c0d3f8-02d0-4e65-8214-2bc46250e01e")
+		(property "Sheetname" "Punch Stepper Drive"
+			(at 35.56 156.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "PunchStepperDrive.kicad_sch"
+			(at 35.56 175.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 71.12)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2c0db6d5-dd71-47a1-97b2-afc049fd687b")
+		(property "Sheetname" "Punch Handshake"
+			(at 35.56 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "PunchHandshake.kicad_sch"
+			(at 35.56 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 114.3)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4b4e67d9-0a06-490f-80a9-fd6678a73be5")
+		(property "Sheetname" "Punch Sequencer"
+			(at 111.76 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "PunchSequencer.kicad_sch"
+			(at 111.76 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 31.75)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5aa6aea0-9ac2-4948-970f-3cee7e6036cb")
+		(property "Sheetname" "Clock & Reset"
+			(at 113.03 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "ClockReset.kicad_sch"
+			(at 113.03 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 71.12)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7293526f-1390-4815-8ccd-d2e209d75cb8")
+		(property "Sheetname" "Punch Data Buffer"
+			(at 113.03 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "PunchDataBuffer.kicad_sch"
+			(at 113.03 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 71.12)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "73cc0bbb-7e45-4b1c-b156-ba40adb15eba")
+		(property "Sheetname" "Punch Relay Drive 1-4"
+			(at 190.5 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "PunchRelayDrive1-4.kicad_sch"
+			(at 190.5 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 157.48)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8d17e9ac-2600-4be2-90cd-6267d8f48a68")
+		(property "Sheetname" "Power, Bypass & Spares"
+			(at 111.76 156.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "PowerBypassSpares.kicad_sch"
+			(at 111.76 175.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 31.75)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9e6150f5-3779-48a3-802e-a2f7ba7e4314")
+		(property "Sheetname" "Front Panel & Status"
+			(at 35.56 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "FrontPanelStatus.kicad_sch"
+			(at 35.56 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 114.3)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a5863729-05b4-4dce-821c-dca15ee1044a")
+		(property "Sheetname" "AC Motor Control & Sync"
+			(at 35.56 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "ACMotorControlSync.kicad_sch"
+			(at 35.56 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 189.23 114.3)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d619080f-234e-45f5-bf57-6ea2fe1f9f92")
+		(property "Sheetname" "Punch Relay Drive 5-8 & S"
+			(at 189.23 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "PunchRelayDrive5-8S.kicad_sch"
+			(at 189.23 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 31.75)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ef1b8814-afa4-4f25-a60f-3c9f202868b2")
+		(property "Sheetname" "Connectors"
+			(at 190.5 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 190.5 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SRP3075_Main_Logic-Punch_Control"
+				(path "/bb536a5f-2126-4b02-b0c6-8f959314547b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "Jeremy Default.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WBgB5USAPaaVSEAtxsWHGQdJWWMnPes1goiN1ox3yTdiTPfuCT//78AEAFMAEUATQB9bSd3
+				4uY5HhYsWs32PGhJfm1YsCrafrLjl/wJAEAgJHofZ3XJjcz4LeibMCQ74++yX+8QAIHCRSk91Fn7
+				YjtmHxEAgRFE2oDdZ0GEB6v2tEyl/F37nYc8Z78Zfx/27ClBHw699vDtt3u+wSvCuWvZf10U8Ve7
+				Nnj9oj0p7c/dj1K2i939z7OI/7EXwu/p2DxpHaEVoheTaiiYZVJpoAZWT0oXVaIVVyrjMMcmw2yb
+				hho0w79z5JxN2f/61yaO/VH0sWpTzFStnp7nTXoABP5iDm2r9ohDksr+kr/31gyBQqJaCwWEwyxc
+				lkG2Q4WYYJRMoj3s47Nh97YV1aSZhNO48C1XKWj73T2bwJASgJrs78SMOZ091FkumQWznOwGhthr
+				RKVUtE3LZJeRX65LBmugEUGlFBqaUZCkkGEOcESkxqwOuTY8AODOto7lBeHY8cRHJDQMsHBDCOCO
+				RzMDO9QQjY41UMo1Wi3pLJElrGAjt0ylB5jSB5d6iwYoAJzWQA6arlv/UHCFFUtFvcTyPiE0el0L
+				Qg3+Qc7zkIKfcGXaWlpeSOTdrmz7ir7MCR3Zw6Oego9gInQiidaXQUkYoJeZCX4WD0rMI4dfgnMy
+				Q9uXE468J7tmi3Hs4yQLBFCgyjwK1A8Ta2FmQYgDORFeIXQde2GAu3cYMjdFi67V9Isi1qi/1ikB
+				kSaRkwbhusk6kEcVOzniaLxUSu8ahS/iJ97tQoswjA9TBQ==|
+			)
+			(checksum "FE930A141208690E2EBD63368BF3AED2")
+		)
+	)
+)
