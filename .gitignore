@@ -42,3 +42,5 @@ $RECYCLE.BIN/
 
 # ── Internal / session files (not for public consumption) ────────────────────
 *-backups
+*dump.txt
+file_inventory.csv
