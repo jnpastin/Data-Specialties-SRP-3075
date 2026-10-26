@@ -70,7 +70,7 @@ The resulting signals are passed to the Serial Interface and Reader Control boar
 
 Tape movement is provided by a single variable-reluctance stepper motor.
 
-The motor drives both the tape-feed mechanism and the sprocket through a belt. The transport advances the tape in discrete character-position increments under the control of the reader electronics.
+The motor drives the dual sprocket tape-feed mechanism through a belt. The transport advances the tape in discrete character-position increments under the control of the reader electronics.
 
 The reader operates in a read-then-step sequence. Character data is observed while the tape is stationary, after which the transport advances the next character position into alignment with the read station.
 
@@ -101,7 +101,7 @@ A polarity-control input determines the logical interpretation of a detected hol
 - Logical one, or mark
 - Logical zero, or space
 
-The SRP-3075 does not expose this selection. The polarity input has no signla connected on the Serial Interface and Reader Control board, relying on the internal pull-up, so that a hole is always reported as a logical one, or mark.
+The SRP-3075 does not expose this selection. The polarity input has no signal connected on the Serial Interface and Reader Control board, relying on the internal pull-up, so that a hole is always reported as a logical one, or mark.
 
 Polarity is therefore not configurable by the operator or host system.
 

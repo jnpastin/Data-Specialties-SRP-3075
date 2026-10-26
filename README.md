@@ -20,7 +20,7 @@ The serial model supports:
 - Remote reader and punch control using ASCII DC1 through DC4 characters
 - Buffered punch data while the punch mechanism starts or is temporarily unavailable
 
-The punch operates mechanically at up to 75 characters per second. The optical reader operates at up to 300 characters per second.  This aligns with the available serial baud rates.  Since the serial configuration is 8 data bits and 1 stop bit (8-N-1), each character is 10 bits long.
+The punch operates mechanically at up to 75 characters per second. The optical reader operates at up to 300 characters per second.  This aligns with the available serial baud rates.  Since the serial configuration is 8 data bits and 1 stop bit (8-N-1), each character is 10 bits long (including the start bit).
 
 ## Repository Purpose
 
