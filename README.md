@@ -54,9 +54,11 @@ The primary manufacturer reference used during this project was:
 
 > Data Specialties Inc., *SP75 / SRP3075 "S" Series Technical Manual*, Specification No. 3601A, July 1978.
 
-A scanned copy is available here and through Bitsavers.
+A scanned copy is available [in the docs folder](./docs/DSI_S_Series_Technical_Manual.pdf) and through Bitsavers.
 
 The manual documents the product variants, operating procedures, options, interface signals, timing, and system specifications. It does not include the complete board-level electrical schematics recreated in this repository.
+
+One significant challenge was understanding the tolerances and adjustment procedures for the punch mechanism.  In the docs folder, there is a [manual excerpt](./docs/Moduperf_Maintenance_Manual.pdf) from a Data I/O device that used the same mechanism.  This contains all of the necessary adjustments and information to properly maintain this mechanism.
 
 ## Reverse-Engineering Method
 
